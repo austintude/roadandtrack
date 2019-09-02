@@ -1,0 +1,16 @@
+{
+    "theme": {
+        "slug": "roadandtrackspecialists",
+        "name": "Road and Track Specialists",
+        "author": "Daniel Bisett",
+        "PHPNamespace": "WP_Rig\\WP_Rig"
+      },
+      "dev": {
+        "browserSync": {
+          "live": true,
+          "proxyURL": "roadandtrackspecialists:8888",
+          "bypassPort": "8185",
+          "https": false
+        }
+}
+}
