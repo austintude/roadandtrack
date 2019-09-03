@@ -1,0 +1,21 @@
+#block1 {
+    background: #f7f7f7;
+    padding: 2rem;
+
+    & h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+        border-bottom: solid #f7931e;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+}

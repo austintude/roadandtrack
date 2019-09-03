@@ -9,20 +9,44 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 
+
 <div class="site-info">
-	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wp-rig' ) ); ?>">
+	<div id="supremeSocial">
+		<div id="socialIcon1">
+			<amp-img 
+				src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/facebook-icon-blue.png"
+				width="1"
+				height="1"
+				layout="responsive"
+				alt="facebook icon">
+			</amp-img>
+		</div>
+		<div id="socialIcon2">
+			<amp-img 
+				src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/instagram-icon-blue.png"
+				width="1"
+				height="1"
+				layout="responsive"
+				alt="instagram icon">
+			</amp-img>
+		</div>
+		<div id="socialIcon3">
+			<amp-img 
+				src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/twitter-icon-blue.png"
+				width="1"
+				height="1"
+				layout="responsive"
+				alt="twitter icon">
+			</amp-img>
+		</div>
+</div>
+<div id="supremeLogo">
+<?php the_custom_logo(); ?>
+</div>
+	<a href="<?php echo esc_url( __( 'https://austintatiousdesign.co/', 'wp-rig' ) ); ?>">
 		<?php
 		/* translators: %s: CMS name, i.e. WordPress. */
-		printf( esc_html__( 'Proudly powered by %s', 'wp-rig' ), 'WordPress' );
+		printf( esc_html__( 'Proudly built and maintained by %s', 'wp-rig' ), 'Austintatious Design' );
 		?>
 	</a>
-	<span class="sep"> | </span>
-	<?php
-	/* translators: Theme name. */
-	printf( esc_html__( 'Theme: %s by the contributors.', 'wp-rig' ), '<a href="' . esc_url( 'https://github.com/wprig/wprig/' ) . '">WP Rig</a>' );
-
-	if ( function_exists( 'the_privacy_policy_link' ) ) {
-		the_privacy_policy_link( '<span class="sep"> | </span>' );
-	}
-	?>
 </div><!-- .site-info -->
