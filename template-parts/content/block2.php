@@ -9,135 +9,84 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 
-<div id="block2">
-<div id="carousel2">
-	<amp-carousel height="600" 
-		width="1200"
-		layout="responsive"
-		type="slides"
-		autoplay
-		delay="4000">
-	<div>
-		<!-- <amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/indoors-circle-window-min.jpg"
-  width="12"
-			height="6"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img> -->
-		<amp-img 
-		media="(max-width: 48.5em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/architecture-large-window-story-min.jpg"
-  width="600"
-			height="301"
-			layout="responsive"
-			alt="architecture-large-window-story-min"
-			class="box2">
-		</amp-img>
-		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/architecture-large-window.jpg"
-  width="600"
-			height="301"
-			layout="responsive"
-			alt="architecture-large-window"
-			class="box2">
-		</amp-img>
-		<figcaption class="paragraph box1">
-			<h5>Featured Floor</h5>
-			<h4>Chardonnay</h4>
-			<p>
-				Clouds are free. They just float around the sky all day and have fun. It looks so good, I might as well not stop. The only thing worse than yellow snow is green snow. Mountains are so simple, they're hard. You have to make almighty decisions when you're the creator.
-			</p>
-			<div class="ctaButton">
-				<h5>
-					<a href="#">View Now</a>
-				</h5>
-			</div>
-		</figcaption>
+<div class="block2">
+	<div class="leftBlock">
+	<h3>Our Services</h3>
+	<h4>As a full service repair facility Road And Track Specialits is the place for :</h4>
+	<ul>
+		<li>
+			Mounting and balancing tires
+		</li>
+		<li>
+			Oil change service
+		</li>
+		<li>
+			Scheduled maintenance
+		</li>
+		<li>
+			Fork seal replacement
+		</li>
+		<li>
+			Carburetor overhauls
+		</li>
+		<li>
+			Accessory installation
+		</li>
+		<li>
+			Custom exhaust installation
+		</li>
+		<li>
+			Carburetor jetting kits
+		</li>
+		<li>
+			LED/HID lighting
+		</li>
+		<li>
+			Custom wiring
+		</li>
+		<li>
+			Braided brake hoses
+		</li>
+		<li>
+			Restoration services
+		</li>
+	</ul>
+	<h4>And so much more... </h4>
 	</div>
-    <div>
-	<!-- <amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/governors-mansion-min.jpg"
-  width="12"
-			height="6"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img> -->
+	<div class="rightBlock">
 		<amp-img 
-		media="(max-width: 48.5em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/living-room.jpg"
-  width="1200"
-			height="600"
+			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/MG-Breva1.jpg"
+  			width="1536"
+			height="768"
 			layout="responsive"
-			alt="living-room"
-			class="box2">
+			alt="floor-sample-min"
+		>
 		</amp-img>
 		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/living-room-story-min.jpg"
-  width="1200"
-			height="600"
+			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/Honda-RC166-250cc-6-Cylinder.jpg"
+  			width="1536"
+			height="768"
 			layout="responsive"
-			alt="living-room-story-min"
-			class="box2">
-		</amp-img>	
-		<figcaption class="paragraph box1">
-		<h5>Featured Floor</h5>
-			<h4>Capris</h4>
-			<p>
-			Just let your mind wander and enjoy. This should make you happy. But they're very easily killed. Clouds are delicate.
-			</p>
-			<div class="ctaButton">
-				<h5>
-					<a href="#">View Now</a>
-				</h5>
-			</div>
-		</figcaption>
-	</div>
-	<div>
-	<!-- <amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/kitchen-bright-story-min.jpg"
-  width="12"
-			height="6"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img> -->
-		<amp-img 
-		media="(max-width: 48.5em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/space-open-room-darm-wood-story-min.jpg"
-  width="600"
-			height="300"
-			layout="responsive"
-			alt="space-open-room-darm-wood-story-min"
-			class="box2">
+			alt="floor-sample-min"
+		>
 		</amp-img>
 		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/space-open-room-darm-wood.jpg"
-  width="600"
-			height="300"
+			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/2003-Honda-Project-CRF230.jpg"
+  			width="1536"
+			height="768"
 			layout="responsive"
-			alt="space-open-room-darm-wood"
-			class="box2">
-		</amp-img>	
-		<figcaption class="paragraph box1">
-		<h5>Featured Floor</h5>
-			<h4>Classic Walnut</h4>
-			<p>
-			You can do anything your heart can imagine. You're meant to have fun in life. Only eight colors that you need. Let's put some happy little clouds in our world.
-			</p>
-			<div class="ctaButton">
-				<h5>
-					<a href="#">View Now</a>
-				</h5>
-			</div>
-		</figcaption>
+			alt="floor-sample-min"
+		>
+		</amp-img>
+		<amp-img 
+			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/Honda-RC166-250cc-6-Cylinder.jpg"
+  			width="1536"
+			height="768"
+			layout="responsive"
+			alt="floor-sample-min"
+		>
+		</amp-img>
+		
 	</div>
-	</amp-carousel>
-</div> <!-- end #carouselHero -->
 </div>
 

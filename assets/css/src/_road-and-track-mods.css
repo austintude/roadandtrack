@@ -1,5 +1,9 @@
 /* Appended for Road and Track Specialists */
 
+.site {
+    background: rgba(0,0,0,.8);
+}
+
 .has-sidebar	.site {
 	margin: 0;
 	display: grid;
@@ -136,11 +140,11 @@ figcaption {
 	}
 
 	#mobileTopBar {
-		height: 4rem;
+		height: 3.55rem;
 		position: fixed;
 		top: 0;
 		width: 100vw;
-		background: #f7f7f7;
+		background: #f7931e;
 		z-index: 5;
 	}
 
@@ -391,11 +395,11 @@ figcaption {
 	}
 
 	#mobileTopBar {
-		height: 4rem;
+		height: 3.55rem;
 		position: fixed;
 		top: 0;
 		width: 100vw;
-		background: #f7f7f7;
+		background: #f7931e;
 		z-index: 5;
 	}
 
@@ -731,16 +735,16 @@ figcaption {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		top: 2.5rem;
+		top: 1rem;
 		position: relative;
 	}
 
 	#mobileTopBar {
-		height: 7rem;
+		height: 3.55rem;
 		position: fixed;
 		top: 0;
 		width: 100vw;
-		background: #f7f7f7;
+		background: #f7931e;
 		z-index: 5;
 	}
 
@@ -919,12 +923,12 @@ figcaption {
         color: var(--color-link-active);
         }
         & li.current-menu-item a {
-            color: #f7931e;
+            color: #333;
         }
     }
     }
     .main-navigation ul li.current-menu-item a {
-        color: #f7931e;
+        color: #333;
     }
 
 	.site-footer {

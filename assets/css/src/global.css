@@ -27,6 +27,8 @@
 @import "_links.css";
 @import "_road-and-track-mods.css";
 @import "_block1.css";
+@import "_block2.css";
+@import "_testimonials-template.css";
 
 
 /*--------------------------------------------------------------
@@ -221,7 +223,7 @@ select {
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	padding: 0 0 1.75em;
 }
 
 .site-title {
@@ -401,7 +403,8 @@ select {
 	color: var(--color-link-active);
 }
 .main-navigation ul li.current-menu-item a {
-	color: #f7931e;
+	color: #333;
+	text-shadow: 0 1px #f7f7f7;
 }
 
 .main-navigation a:hover,
