@@ -10,6 +10,9 @@
 	grid-template-columns: 1fr;
 }
 
+/* .site-branding {
+	display: flex;
+} */
 .ctaButton {
 	border: #dededc solid 1px;
 	border-radius: 0.1rem;
@@ -39,8 +42,13 @@
 	}
 }
 
-.main-navigation a{
+.main-navigation {
+	.menu {
+		padding-left: 17vw;
+	}
+	a{
     color: #f7931e;
+}
 }
 .lightbox {
     background: rgba(0,0,0,.8);
@@ -73,6 +81,106 @@ figcaption {
 
 #subscribe {
 	grid-area: subscribe;
+}
+
+.site-footer {
+	display: flex;
+	display: grid;
+	margin: auto 2fr;
+	grid-template-rows: 1fr 60px;
+	color: #f7f7f7;
+	& h4 {
+		
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+	& h5 ,
+	& li,
+	& a {
+		font-size: 1rem;
+		line-height: 1rem;
+		font-weight: 400;
+		color: rgba(250,250,250,0.7);
+		text-decoration: none;
+	}
+
+	& ul {
+		margin-left: 0;
+		padding-inline-start: 0;
+		& li {
+			list-style: none;
+		}
+	}
+	& address {
+		font-style: normal;
+	}
+	& .blockTitle {
+		padding: 0.2rem 0;
+		text-align: left;
+	}
+	& .topBlock {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 0.5rem;
+		margin: 0 5rem 8rem;
+	
+	& .leftBlock {
+		display:flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: left;
+
+	}
+
+	& .middleBlock,
+	& .rightBlock {
+		display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+		& .blockTitle {
+			& h5 {
+				font-size: 1rem;
+				font-weight: 600;
+			}
+		}
+		& amp-img {
+			height: 10rem;
+			width: 100%;
+		}
+	}
+
+	& .blockImages {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: .5rem;
+		max-height: 10rem;
+		& amp-img {
+			height: 10rem;
+			width: 100%;
+		}
+	}
+
+	& .middleBlock .row2,
+	& .rightBlock .row2 {
+		display:flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+}
+
+	& .baseBlock {
+		background: rgba(0,0,0,0.7);
+		bottom: 0;
+		position: absolute;
+		width: 100vw;
+	}
+
 }
 
 	/* Template Page mods begin */
@@ -222,6 +330,7 @@ figcaption {
 			background: #dededc;
 			margin-left: auto;
 			margin-right: auto;
+			text-align: center;
 		}
 		& #socialIcon1 {
 			grid-column: 1;
@@ -257,6 +366,8 @@ figcaption {
 			& #socialIcon2,
 			& #socialIcon3 {
 				width: 2rem;
+				align-self: center;
+    justify-self: center;
 			}
 
 			& amp-img {
@@ -737,6 +848,7 @@ figcaption {
 		justify-content: center;
 		top: 1rem;
 		position: relative;
+		padding-left: 17vw;
 	}
 
 	#mobileTopBar {
@@ -923,12 +1035,12 @@ figcaption {
         color: var(--color-link-active);
         }
         & li.current-menu-item a {
-            color: #333;
+            color: #f7f7f7;
         }
     }
     }
     .main-navigation ul li.current-menu-item a {
-        color: #333;
+        color: #f7f7f7;
     }
 
 	.site-footer {

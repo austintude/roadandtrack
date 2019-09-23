@@ -29,6 +29,7 @@
 @import "_block1.css";
 @import "_block2.css";
 @import "_testimonials-template.css";
+@import "_ctaBlock.css";
 
 
 /*--------------------------------------------------------------
@@ -403,13 +404,13 @@ select {
 	color: var(--color-link-active);
 }
 .main-navigation ul li.current-menu-item a {
-	color: #333;
-	text-shadow: 0 1px #f7f7f7;
+	color: #f7f7f7;
+	text-shadow: 0 1px #333;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .main-navigation ul {

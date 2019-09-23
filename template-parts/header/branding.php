@@ -6,6 +6,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+$hero_images	= get_field('hero_images');
 
 ?>
 
@@ -14,6 +15,58 @@ namespace WP_Rig\WP_Rig;
 	&nbsp;
 </div>
 <?php the_custom_logo(); ?>
+
+<div id="carouselHero" amp-fx="parallax" data-parallax-factor="1.2">
+	<amp-carousel height="600" 
+		width="1200"
+		layout="responsive"
+		type="slides"
+		autoplay
+		delay="5500">
+		<?php while (have_rows('hero_images')) : the_row();
+
+// vars
+$hero_image_mobile = get_sub_field('hero_image_mobile');
+$hero_image_mobile_landscape = get_sub_field('hero_image_mobile_landscape');
+$hero_image_ipad_landscape_plus = get_sub_field('hero_image_ipad_landscape_plus');
+$hero_figcaption = get_sub_field('hero_figcaption');
+?>
+	<div>
+	
+		<amp-img 
+		media="(max-width: 48.5em) and (max-height:23em)"
+  src="<?php echo $hero_image_mobile_landscape['url']; ?>"
+  width="640"
+			height="480"
+			layout="responsive"
+			alt="<?php echo $hero_image_mobile_landscape['alt']; ?>">
+		</amp-img>
+		<amp-img 
+		media="(max-width: 48.5em) and (min-height:23em)"
+  src="<?php echo $hero_image_mobile['url']; ?>"
+  width="640"
+			height="480"
+			layout="responsive"
+			alt="<?php echo $hero_image_mobile['alt']; ?>">
+		</amp-img>
+		<amp-img 
+		media="(min-width: 48.6em)"
+  src="<?php echo $hero_image_ipad_landscape_plus['url']; ?>"
+  width="640"
+			height="480"
+			layout="responsive"
+			alt="<?php echo $hero_image_ipad_landscape_plus['alt']; ?>">
+		</amp-img>
+		<figcaption class="paragraph">
+		<?php echo $hero_figcaption; ?>
+		</figcaption>
+	</div>
+	<?php endwhile; ?>
+</amp-carousel>
+</div> <!-- end #carouselHero -->
+
+
+<!-- 
 <div id="carouselHero" amp-fx="parallax" data-parallax-factor=".2">
 	<amp-carousel height="600" 
 		width="1200"
@@ -113,7 +166,8 @@ namespace WP_Rig\WP_Rig;
 		</figcaption>
 	</div>
 </amp-carousel>
-</div> <!-- end #carouselHero -->
+</div>  -->
+<!-- end #carouselHero -->
 	
 
 	
