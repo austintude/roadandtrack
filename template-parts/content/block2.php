@@ -6,6 +6,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+$service_images	= get_field('service_images');
 
 ?>
 
@@ -54,38 +55,19 @@ namespace WP_Rig\WP_Rig;
 	<h4>And so much more... </h4>
 	</div>
 	<div class="rightBlock">
+	<?php while (have_rows('service_images')) : the_row();
+
+// vars
+$service_image = get_sub_field('service_image');
+?>
 		<amp-img 
-			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/MG-Breva1.jpg"
-  			width="1536"
+  src="<?php echo $service_image['url']; ?>"
+  width="1536"
 			height="768"
 			layout="responsive"
-			alt="floor-sample-min"
-		>
-		</amp-img>
-		<amp-img 
-			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/Honda-RC166-250cc-6-Cylinder.jpg"
-  			width="1536"
-			height="768"
-			layout="responsive"
-			alt="floor-sample-min"
-		>
-		</amp-img>
-		<amp-img 
-			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/2003-Honda-Project-CRF230.jpg"
-  			width="1536"
-			height="768"
-			layout="responsive"
-			alt="floor-sample-min"
-		>
-		</amp-img>
-		<amp-img 
-			src="../wp-content/themes/wprig-roadandtrackspecialists/assets/images/Honda-RC166-250cc-6-Cylinder.jpg"
-  			width="1536"
-			height="768"
-			layout="responsive"
-			alt="floor-sample-min"
-		>
-		</amp-img>
+			alt="<?php echo $service_image['alt']; ?>">
+		</amp-img>	
+		<?php endwhile; ?>
 		
 	</div>
 </div>
