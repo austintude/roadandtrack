@@ -7,52 +7,29 @@
 
 namespace WP_Rig\WP_Rig;
 $service_images	= get_field('service_images');
+$services_title	= get_field('services_title');
+$services_desc	= get_field('services_desc');
+$services_tag	= get_field('services_tag');
+$services_offered	= get_field('services_offered');
 
 ?>
 
 <div class="block2">
 	<div class="leftBlock">
-	<h3>Our Services</h3>
-	<h4>As a full service repair facility Road And Track Specialits is the place for :</h4>
+	<h3><?php echo $services_title; ?></h3>
+	<h4><?php echo $services_desc; ?></h4>
 	<ul>
-		<li>
-			Mounting and balancing tires
-		</li>
-		<li>
-			Oil change service
-		</li>
-		<li>
-			Scheduled maintenance
-		</li>
-		<li>
-			Fork seal replacement
-		</li>
-		<li>
-			Carburetor overhauls
-		</li>
-		<li>
-			Accessory installation
-		</li>
-		<li>
-			Custom exhaust installation
-		</li>
-		<li>
-			Carburetor jetting kits
-		</li>
-		<li>
-			LED/HID lighting
-		</li>
-		<li>
-			Custom wiring
-		</li>
-		<li>
-			Braided brake hoses
-		</li>
-		<li>
-			Restoration services
-		</li>
+	<?php while (have_rows('services_offered')) : the_row();
+
+// vars
+$service_offered = get_sub_field('service_offered');
+?>
+<li>
+<?php echo $service_offered; ?>
+</li>
+		<?php endwhile; ?>
 	</ul>
-	<h4>And so much more... </h4>
+	<h4><?php echo $services_tag; ?></h4>
 	</div>
 	<div class="rightBlock">
 	<?php while (have_rows('service_images')) : the_row();
