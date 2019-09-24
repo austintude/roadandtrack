@@ -6,6 +6,8 @@
     padding: 1rem 5vw;
     background: rgba(0,0,0,.8);
 
+   
+
     & .leftBlock {
         color: #f7f7f7;
 
@@ -66,4 +68,16 @@
     grid-row: span 3; /* Spans two rows */
     }
   }
+
+  @media (--narrow-menu-query) {
+    grid-template-columns: 1fr;
+    & .leftBlock {
+        & h3 {
+        width: 80vw;
+    }
+        & ul {
+            margin-left: 0;
+        }
+}
+}
 }

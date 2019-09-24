@@ -125,6 +125,11 @@ figcaption {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 0.5rem;
 		margin: 0 5rem 8rem;
+
+		@media (--narrow-menu-query) {
+			grid-template-columns: 1fr;
+			margin: 0 2rem 8rem;
+		}
 	
 	& .leftBlock {
 		display:flex;
@@ -348,8 +353,8 @@ figcaption {
 	.site-footer {
 		top: 0;
 		position: relative;
-		background: #f7f7f7;
-		color: #202158;
+		/* background: #f7f7f7; */
+		/* color: #f7f7f7; */
 		margin: -10rem 0 0;
 
 		& a:visited {
@@ -393,7 +398,7 @@ figcaption {
 			font-size: 0.8rem;
 
 			& a {
-				color: #202158;
+				color: #f7f7f7;
 				text-decoration: none;
 			}
 		}
@@ -414,7 +419,7 @@ figcaption {
 			margin-top: -5rem;
 			& a,
 			& a:visited {
-				color: #333;
+				color: #f7f7f7;
 			}
 		}
 	}
@@ -595,8 +600,8 @@ figcaption {
 	.site-footer {
 		top: 0;
 		position: relative;
-		background: #f7f7f7;
-		color: #202158;
+		/* background: #f7f7f7;
+		color: #f7f7f7; */
 		margin: -10rem 0 0;
 
 		& #supremeSocial {
@@ -634,7 +639,7 @@ figcaption {
 			font-size: 0.8rem;
 
 			& a {
-				color: #202158;
+				color: #f7f7f7;
 				text-decoration: none;
 			}
 		}
