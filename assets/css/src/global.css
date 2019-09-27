@@ -29,6 +29,8 @@
 @import "_block1.css";
 @import "_block2.css";
 @import "_testimonials-template.css";
+@import "_product-line-template.css";
+@import "_portfolio-template.css";
 @import "_ctaBlock.css";
 
 
@@ -82,7 +84,7 @@
 	max-width: 100%;
 }
 
-@media (--sidebar-query) {
+/* @media (--sidebar-query) {
 
 	.has-sidebar .site {
 		margin: 0 1em;
@@ -109,7 +111,7 @@
 	.site-footer {
 		grid-column: span 2;
 	}
-}
+} */
 
 /*--------------------------------------------------------------
 # Forms

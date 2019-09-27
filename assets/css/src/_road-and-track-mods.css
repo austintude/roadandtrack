@@ -68,7 +68,12 @@ figcaption {
     top: -60vh;
     font-size: 3rem;
     color: #f7f7f7;
-    text-shadow: 3px 3px #333;
+	text-shadow: 3px 3px #333;
+	background: rgba(0,0,0,.8);
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
 }
 
 #findUs {
@@ -130,7 +135,7 @@ figcaption {
 			grid-template-columns: 1fr;
 			margin: 0 2rem 8rem;
 		}
-	
+
 	& .leftBlock {
 		display:flex;
 		display: grid;
@@ -197,7 +202,7 @@ figcaption {
 		}
 
 		& main {
-			background: #fff url(../images/tile.jpg);
+			/* background: #fff url(../images/tile.jpg); */
 			width: 100vw;
 		}
 
