@@ -10,6 +10,12 @@ $gallery_images	= get_field('gallery_images');
 
 ?>
 <div class="galleryBlocks">
+    <amp-carousel height="600" 
+		width="1200"
+		layout="responsive"
+		type="slides"
+		autoplay
+		delay="5500">
 <?php while (have_rows('gallery_images')) : the_row();
 
 // vars
@@ -28,7 +34,8 @@ aria-describedby="<?php echo $gallery_category_id; ?>">
       <div hidden id="<?php echo $gallery_category_id; ?>">
         <?php echo $gallery_category_image_caption; ?>
 </div>
-<div hidden>
+</div>
+<!-- <div hidden> -->
 	
 		<?php while (have_rows('gallery_category')) : the_row();
 
@@ -57,15 +64,15 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 		
 	
 	<?php endwhile; ?>
-</div><!-- close hidden div -->
+<!-- </div> -->
+<!-- close hidden div -->
 <div class="categoryTitle" id="category-<?php echo $gallery_category_id; ?>">
        <h3> 
            <?php echo $gallery_category_content; ?>
 </h3>
-</div>
 </div> <!-- end -->
 <?php endwhile; ?>
-
+</amp-carousel>
 <?php if ( have_posts() ) : the_post(); ?>
 <div class="portfolioContent">
     <?php
