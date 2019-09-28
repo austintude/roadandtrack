@@ -1,0 +1,35 @@
+<?php
+/**
+ * Template part for Gallery
+ *
+ * @package wp_rig
+ */
+
+namespace WP_Rig\WP_Rig;
+$gallery_images	= get_field('gallery_images');
+
+?>
+<div class="galleryBlocks">
+<?php while (have_rows('gallery_images')) : the_row();
+
+// vars
+$gallery_category = get_sub_field('gallery_category');
+$gallery_category_id = get_sub_field('gallery_category_id');
+$gallery_category_title = get_sub_field('gallery_category_title');
+$gallery_category_image = get_sub_field('gallery_category_image');
+$gallery_category_image_caption = get_sub_field('gallery_category_image_caption');
+?>
+
+<div id="gallery-<?php echo $gallery_category_id; ?>" class="galleryItem">
+<amp-img lightbox="<?php echo $gallery_category_title; ?>" amp-lightbox-group="<?php echo $gallery_category_title; ?>" src="<?php echo $gallery_category_image['url']; ?>" width="400" height="300" layout="responsive"
+aria-describedby="<?php echo $gallery_category_id; ?>">
+      </amp-img>
+      <div hidden id="<?php echo $gallery_category_id; ?>">
+        <?php echo $gallery_category_image_caption; ?>
+</div>
+
+
+</div> <!-- end -->
+<?php endwhile; ?>
+
+</div>

@@ -1,0 +1,13 @@
+.page-template-portfolio-child {
+    & .galleryBlocks {
+        & .portfolioContent {
+            color:#fff;
+        }
+    }
+    
+    @media (--narrow-portrait-menu-query) {
+        & .galleryBlocks {
+            margin: 0;
+        }
+    }
+}

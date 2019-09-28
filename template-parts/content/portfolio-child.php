@@ -65,4 +65,10 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 </div>
 </div> <!-- end -->
 <?php endwhile; ?>
+
+<?php if ( have_posts() ) : the_post(); ?>
+<div class="portfolioContent">
+    <?php
+the_content();
+ endif; ?>
 </div>

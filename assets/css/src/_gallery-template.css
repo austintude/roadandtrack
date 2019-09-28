@@ -1,0 +1,32 @@
+.page-template-gallery {
+    & .galleryBlocks {
+        margin: 8rem 5rem;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(6, 80px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  
+  & div:nth-child(5n) {
+    grid-column: span 2; /* Spans two columns */
+    grid-row: span 2; /* Spans two rows */
+  }
+
+  & div:nth-child(9n) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+}
+
+    & .galleryBlocks {
+        & .portfolioContent {
+            color:#fff;
+        }
+    }
+    
+    @media (--narrow-portrait-menu-query) {
+        & .galleryBlocks {
+            margin: 0;
+        }
+    }
+}
