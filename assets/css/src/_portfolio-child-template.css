@@ -2,6 +2,13 @@
     & .galleryBlocks {
         & .portfolioContent {
             color:#fff;
+            margin: 2rem 5vw;
+            & div {
+                padding: 2rem;
+            }
+            & p {
+                font-size: 1rem;
+            }
         }
     }
     
