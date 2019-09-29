@@ -276,7 +276,6 @@
 			& .secondLine {
 				/* padding-right: 2.5rem; */
 			}
-		
 		}
 }
 
@@ -284,6 +283,7 @@
     #ctaBlock {
 		display: flex;
 		padding: 3.7rem 0.3rem 2.7rem;
+		margin-top: 7rem;
 
 		& #subscribe #ctaIframe {
 			grid-column: 2;
