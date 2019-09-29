@@ -25,7 +25,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		while ( have_posts() ) {
 			the_post();
 
-			get_template_part( 'template-parts/content/entry', 'page' );
+			the_content();
 		}
 		get_template_part( 'template-parts/content/ctaBlock' );
 		?>

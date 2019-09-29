@@ -1,4 +1,11 @@
 .page-template-portfolio-child {
+    & amp-carousel amp-img {
+        cursor: pointer;
+    }
+    & .main {
+        top: 0;
+        margin-top: -8rem;
+    }
     & .galleryBlocks {
         & .portfolioContent {
             color:#fff;
@@ -11,10 +18,24 @@
             }
         }
     }
+    & .site-footer {
+        & .topBlock {
+margin-bottom: 10rem;
+    }
+    & .baseBlock {
+        bottom: auto;
+    }
+}
     
     @media (--narrow-portrait-menu-query) {
+        & #carouselHero,
+        & amp-carousel,
+        & .amp-carousel-slide,
+        & #carouselHero amp-img {
+            height: 17rem;
+        }
         & .galleryBlocks {
-            margin: 0;
+            margin: 9rem 0;
         }
     }
 }

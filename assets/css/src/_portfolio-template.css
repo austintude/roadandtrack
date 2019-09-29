@@ -39,7 +39,8 @@
     }
     @media (--narrow-portrait-menu-query) {
         & .galleryBlocks {
-            margin: 0;
+            margin: 2rem 0;
+        grid-gap: 3rem;
         }
         & #carouselHero,
         & #carouselHero amp-img {

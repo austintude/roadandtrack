@@ -180,12 +180,14 @@ $right_image_2_alt = get_sub_field('right_image_2_alt');
 <div id="supremeLogo">
 <?php the_custom_logo(); ?>
 </div>
+<div class="builtBy">
 	<a href="<?php echo esc_url( __( 'https://austintatiousdesign.co/', 'wp-rig' ) ); ?>">
 		<?php
 		/* translators: %s: CMS name, i.e. WordPress. */
 		printf( esc_html__( 'Proudly built and maintained by %s', 'wp-rig' ), 'Austintatious Design' );
 		?>
 	</a>
+</div>
 </div>
 
 </div><!-- .site-info -->
