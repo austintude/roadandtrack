@@ -25,6 +25,7 @@
         & .rightBlock {
             & ul {
                 padding-inline-start: 0;
+
             }
         }
     }
@@ -195,6 +196,9 @@
                 }
                 & .rightItem {
                     text-align: right;
+                    @media (--mobile-menu-query) {
+                        text-align: left;
+                    }
                 }
             }
             
