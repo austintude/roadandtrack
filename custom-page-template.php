@@ -27,8 +27,9 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 			the_content();
 		}
-		get_template_part( 'template-parts/content/ctaBlock' );
+		
 		?>
 	</main><!-- #primary -->
+	<?php get_template_part( 'template-parts/content/ctaBlock' ); ?>
 <?php
 get_footer();
