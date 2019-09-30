@@ -7,6 +7,7 @@
 
 namespace WP_Rig\WP_Rig;
 $block1_title	= get_field('block1_title');
+$block1_title_2	= get_field('block1_title_2');
 $block1_content	= get_field('block1_content');
 $block1_phone_link	= get_field('block1_phone_link');
 $block1_phone_txt	= get_field('block1_phone_txt');
@@ -18,6 +19,8 @@ $block1_phone_txt	= get_field('block1_phone_txt');
 <div id="contentBlock">
 	<h3>
   <?php echo $block1_title; ?>
+  <br>
+  <?php echo $block1_title_2; ?>
 	</h3>
 	<p>
 	<?php echo $block1_content; ?>

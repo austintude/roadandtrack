@@ -57,9 +57,9 @@ $hero_figcaption = get_sub_field('hero_figcaption');
 			layout="responsive"
 			alt="<?php echo $hero_image_ipad_landscape_plus['alt']; ?>">
 		</amp-img>
-		<figcaption class="paragraph">
+		<!-- <figcaption class="paragraph">
 		<?php echo $hero_figcaption; ?>
-		</figcaption>
+		</figcaption> -->
 	</div>
 	<?php endwhile; ?>
 </amp-carousel>

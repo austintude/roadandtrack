@@ -10,6 +10,7 @@ namespace WP_Rig\WP_Rig;
 			$contact_us_phone			= get_field('contact_us_phone');
 			$contact_us_phone_link			= get_field('contact_us_phone_link');
 			$contact_us_street			= get_field('contact_us_street');
+			$contact_us_street_suite			= get_field('contact_us_street_suite');
 			$contact_us_city			= get_field('contact_us_city');
 			$contact_us_state			= get_field('contact_us_state');
 			$contact_us_zip			= get_field('contact_us_zip');
@@ -20,6 +21,9 @@ namespace WP_Rig\WP_Rig;
 			$cta_loading_image			= get_field('cta_loading_image');
 			$middle_images			= get_field('middle_images');
 			$right_images			= get_field('right_images');
+			$facebook_link			= get_field('facebook_link');
+			$instagram_link			= get_field('instagram_link');
+			$linkedin_link			= get_field('linkedin_link');
 			
 ?>
 
@@ -41,7 +45,9 @@ namespace WP_Rig\WP_Rig;
         <div id="address">		
             <address property="address" typeof="PostalAddress">
 			<h5><?php bloginfo( 'name' ); ?></h5>
-            <h5><span property="streetAddress"><?php echo $contact_us_street; ?></span>
+			<h5><span property="streetAddress"><?php echo $contact_us_street; ?>
+		<br>
+		<?php echo $contact_us_street_suite; ?></span>
             <br>
             <span property="addressLocality"><?php echo $contact_us_city; ?></span>,
             
@@ -69,7 +75,7 @@ namespace WP_Rig\WP_Rig;
         <amp-iframe width="600" height="450" layout="responsive" 
 			  sandbox="allow-scripts allow-same-origin allow-popups" 
 			  frameborder="0" 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.9253453531173!2d-97.97253728514455!3d30.210678117656027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b46175527c0e7%3A0x535fb8c6947321da!2sSupreme%20Hardwood%20Floors!5e0!3m2!1sen!2sus!4v1568318062947!5m2!1sen!2sus">
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.0376164090367!2d-98.09668328514965!3d29.978348928647492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b5e7c4b29c899%3A0xadcdae56de2751d3!2sRoad%20And%20Track%20Specialists!5e0!3m2!1sen!2sus!4v1569848062009!5m2!1sen!2sus">
     <amp-img layout="fill"
              src="<?php echo get_template_directory_uri() ?>/assets/images/Google-Map-Supreme.jpg"
 			 placeholder>
@@ -84,6 +90,7 @@ namespace WP_Rig\WP_Rig;
 
 	<div id="supremeSocial">
 		<div id="socialIcon1">
+			<a href="<?php echo $facebook_link; ?>" rel="noopener norefferer" target="_blank">
 			<amp-img 
 				src="<?php echo get_template_directory_uri() ?>/assets/images/facebook-icon.png"
 				width="1"
@@ -91,8 +98,10 @@ namespace WP_Rig\WP_Rig;
 				layout="responsive"
 				alt="facebook icon">
 			</amp-img>
+</a>
 		</div>
 		<div id="socialIcon2">
+		<a href="<?php echo $instagram_link; ?>" rel="noopener norefferer" target="_blank">
 			<amp-img 
 				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon.png"
 				width="1"
@@ -100,22 +109,25 @@ namespace WP_Rig\WP_Rig;
 				layout="responsive"
 				alt="instagram icon">
 			</amp-img>
+</a>
 		</div>
 		<div id="socialIcon3">
+		<a href="<?php echo $linkedin_link; ?>" rel="noopener norefferer" target="_blank">
 			<amp-img 
-				src="<?php echo get_template_directory_uri() ?>/assets/images/twitter-icon.png"
+				src="<?php echo get_template_directory_uri() ?>/assets/images/linkedin-icon.png"
 				width="1"
 				height="1"
 				layout="responsive"
-				alt="twitter icon">
+				alt="linkedin icon">
 			</amp-img>
+</a>
 		</div>
 </div>
 </div>
 </div>
 <div class="middleBlock">
 	<div class="blockTitle">
-		<h4>Road and Track Specialists</h4>
+		<h4>Road and Track Specialists, Inc</h4>
 </div>
 <div class="blockImages">
 		<?php while (have_rows('middle_images')) : the_row();

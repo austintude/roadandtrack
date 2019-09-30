@@ -723,14 +723,14 @@ figcaption {
 	}
 
 	.site-footer #supremeLogo amp-img {
-		max-width: 30%;
+		max-width: 40%;
 		margin-left: auto;
 		margin-right: auto;
 		top: 2rem;
 			position: relative;
 			width: 50vw;
 			@media (--narrow-menu-query) {
-				max-width: 70%;
+				max-width: 100%;
 			}
 	}
 
@@ -738,7 +738,7 @@ figcaption {
 @media (--narrow-portrait-menu-query) { 
 
 	.custom-logo {
-		width: 6em;
+		width: 12em;
 	}
 
 	#carouselHero,

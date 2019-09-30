@@ -14,7 +14,9 @@ $contact_amp_iframe_placeholder				= get_field('contact_amp_iframe_placeholder')
 <div id="ctaBlock">
 	<div class="contactForm">
 		<a href="tel:3102134090" rel="noreferrer noopenner"><h3>Call Us Today - (310) 213-4090</h3></a>
-			<h3>Contact Us</h3>
+		<h3>Bring your vehicle in for a FREE repair estimate today</h3>
+		<h3>Buying a used vehicle? Bring it in for a FREE inspection before you buy.</h3>
+			<h3>Email Us</h3>
 			<amp-iframe 
 				width="360" 
 				height="360" 
