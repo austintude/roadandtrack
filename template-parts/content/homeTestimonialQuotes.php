@@ -8,6 +8,9 @@
 namespace WP_Rig\WP_Rig;
 $testimonial_quotes				= get_field('testimonial_quotes');
 $testimonials_block_title			= get_field('testimonials_block_title');
+$more_testimonials_link			= get_field('more_testimonials_link');
+$more_testimonials_link_txt			= get_field('more_testimonials_link_txt');
+
 // insert acf repeater here
 
 ?>
@@ -18,7 +21,12 @@ $testimonials_block_title			= get_field('testimonials_block_title');
 </div>
     <ol class="testimonialsList testimonialsList">
         <!-- insert acf sub-repeater here -->
-        
+        <amp-carousel height="600" 
+		width="1200"
+		layout="responsive"
+		type="slides"
+		autoplay
+		delay="5500">
   <?php while (have_rows('testimonial_quotes')) : the_row();
 
 // vars
@@ -82,6 +90,12 @@ $overall = get_sub_field('overall');
                 
             </li>
             <?php endwhile; ?>
+            </amp-carousel>
 
     </ol>
+    <div class="moreTestimonials">
+    <button>
+				<a href="<?php echo $more_testimonials_link; ?>"><?php echo $more_testimonials_link_txt; ?></a>
+</button>
+                    </div>
 </section>

@@ -23,7 +23,7 @@ if ( is_home() ) {
 		<?php 
 			get_template_part( 'template-parts/content/block1' );
 			get_template_part( 'template-parts/content/block2' );
-			get_template_part( 'template-parts/content/testimonialQuotes' );
+			get_template_part( 'template-parts/content/homeTestimonialQuotes' );
 			get_template_part( 'template-parts/content/ctaBlock' );
 		?>
 		
