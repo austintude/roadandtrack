@@ -26,7 +26,7 @@
     
     @media (--narrow-portrait-menu-query) {
         & .galleryBlocks {
-            margin-top: 7rem 4vw;
+            margin-top: 7rem 0.5rem;
             grid-gap: 4vw;
         }
     }
