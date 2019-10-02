@@ -31,21 +31,25 @@ $service_offered = get_sub_field('service_offered');
 	</ul>
 	<h4><?php echo $services_tag; ?></h4>
 	</div>
+	<a href="/gallery" rel="noopener noreferrer">
 	<div class="rightBlock">
 	<?php while (have_rows('service_images')) : the_row();
 
 // vars
 $service_image = get_sub_field('service_image');
 ?>
+
 		<amp-img 
   src="<?php echo $service_image['url']; ?>"
-  width="1536"
-			height="768"
+  width="261"
+			height="200"
 			layout="responsive"
 			alt="<?php echo $service_image['alt']; ?>">
 		</amp-img>	
+
 		<?php endwhile; ?>
 		
 	</div>
+	</a>
 </div>
 
