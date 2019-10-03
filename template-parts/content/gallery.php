@@ -25,8 +25,8 @@ $gallery_category_image_caption = get_sub_field('gallery_category_image_caption'
 lightbox="<?php echo $gallery_category_title; ?>" 
 amp-lightbox-group="<?php echo $gallery_category_title; ?>" 
 src="<?php echo $gallery_category_image['url']; ?>" 
-width="400" 
-height="300" 
+width="300" 
+height="400" 
 layout="responsive"
 aria-describedby="<?php echo $gallery_category_id; ?>">
       </amp-img>

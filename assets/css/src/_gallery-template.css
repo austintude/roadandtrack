@@ -3,7 +3,7 @@
         margin: 8rem 5rem;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(2, 160px);
   grid-gap: 1rem;
   grid-auto-flow: dense;
   
@@ -26,8 +26,8 @@
     
     @media (--narrow-portrait-menu-query) {
         & .galleryBlocks {
-            margin-top: 7rem 0.5rem;
-            grid-gap: 4vw;
+            margin: 7rem .5rem;
+            grid-gap: 6vw;
         }
     }
 }
