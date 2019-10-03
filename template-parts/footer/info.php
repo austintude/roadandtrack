@@ -66,7 +66,7 @@ namespace WP_Rig\WP_Rig;
 				</li>
 				
 				<li>
-				 <?php echo $contact_us_closed; ?>
+				 Closed: <?php echo $contact_us_closed; ?>
 				</li>
 			</ul>
 			
@@ -127,7 +127,7 @@ namespace WP_Rig\WP_Rig;
 </div>
 <div class="middleBlock">
 	<div class="blockTitle">
-		<h4>Road and Track Specialists, Inc</h4>
+		<h4><?php bloginfo( 'name' ); ?></h4>
 </div>
 <div class="blockImages">
 		<?php while (have_rows('middle_images')) : the_row();
