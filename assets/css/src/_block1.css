@@ -27,6 +27,7 @@
 
     @media (--narrow-menu-query) {
         grid-template-columns: 1fr;
+        margin: 1rem 0;
 
         & ul:nth-child(2) {
             margin-top: -2.5rem;

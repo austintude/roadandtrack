@@ -178,6 +178,9 @@ figcaption {
 		& amp-img {
 			height: 10rem;
 			width: 100%;
+			@media (--large-desktop-query) {
+				height: 100%;
+			}
 		}
 	}
 
@@ -404,7 +407,10 @@ figcaption {
 			margin-left: 25%;
 			top: 2rem;
 			position: relative;
-			width: 50vw;
+			width: 45vw;
+			@media (--large-desktop-query) {
+				width: 20vw;
+			}
 			}
 		}
 
@@ -888,6 +894,7 @@ figcaption {
 	.amp-carousel-slide,
 	#carouselHero amp-img {
 		height: 85vh;
+		min-height: 45rem;
 	}
 
 	.site-branding {

@@ -34,17 +34,17 @@ $hero_figcaption = get_sub_field('hero_figcaption');
 	<div>
 	
 		<amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
+		media="(max-width: 48.5em) and (max-height:29em)"
   src="<?php echo $hero_image_mobile_landscape['url']; ?>"
-  width="640"
-			height="480"
+  width="1280"
+			height="820"
 			layout="responsive"
 			alt="<?php echo $hero_image_mobile_landscape['alt']; ?>">
 		</amp-img>
 		<amp-img 
-		media="(max-width: 48.5em) and (min-height:23em)"
+		media="(max-width: 48.5em) and (min-height:29.1em)"
   src="<?php echo $hero_image_mobile['url']; ?>"
-  width="640"
+  width="375"
 			height="480"
 			layout="responsive"
 			alt="<?php echo $hero_image_mobile['alt']; ?>">
@@ -52,8 +52,8 @@ $hero_figcaption = get_sub_field('hero_figcaption');
 		<amp-img 
 		media="(min-width: 48.6em)"
   src="<?php echo $hero_image_ipad_landscape_plus['url']; ?>"
-  width="640"
-			height="480"
+  width="1280"
+			height="820"
 			layout="responsive"
 			alt="<?php echo $hero_image_ipad_landscape_plus['alt']; ?>">
 		</amp-img>
