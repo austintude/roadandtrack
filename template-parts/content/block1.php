@@ -8,7 +8,8 @@
 namespace WP_Rig\WP_Rig;
 $block1_title	= get_field('block1_title');
 $block1_title_2	= get_field('block1_title_2');
-$block1_content	= get_field('block1_content');
+$block1_content_left	= get_field('block1_content_left');
+$block1_content_right	= get_field('block1_content_right');
 $block1_phone_link	= get_field('block1_phone_link');
 $block1_phone_txt	= get_field('block1_phone_txt');
 
@@ -22,9 +23,10 @@ $block1_phone_txt	= get_field('block1_phone_txt');
   <br>
   <?php echo $block1_title_2; ?>
 	</h3>
-	<p>
-	<?php echo $block1_content; ?>
-	</p>
+	<div class="contentBlocks">
+	<?php echo $block1_content_left; ?>
+	<?php echo $block1_content_right; ?>
+	</div><!-- .contentBlocks -->
   <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox" role="button" tabindex="0"><a href="tel:<?php echo $block1_phone_link; ?>"><?php echo $block1_phone_txt; ?></a></button>
 </div>
 </div>

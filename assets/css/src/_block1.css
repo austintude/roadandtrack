@@ -17,7 +17,22 @@
             width: 90%;
         }
     }
+    & .contentBlocks {
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 1rem 20vw;
 
+
+    @media (--narrow-menu-query) {
+        grid-template-columns: 1fr;
+
+        & ul:nth-child(2) {
+            margin-top: -2.5rem;
+        }
+    }
+    }
     & p {
         width: 80%;
         margin-left: auto;
