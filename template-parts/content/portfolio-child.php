@@ -12,7 +12,7 @@ $gallery_images	= get_field('gallery_images');
 <div class="galleryBlocks">
     <amp-carousel height="300" 
 		width="1200"
-		layout="responsive"
+		layout="intrinsic"
 		type="slides"
 		autoplay
         delay="5500"
@@ -31,7 +31,7 @@ $gallery_category_content = get_sub_field('gallery_category_content');
 ?>
 
 <div id="gallery-<?php echo $gallery_category_id; ?>" class="galleryItem">
-<amp-img lightbox="<?php echo $gallery_category_id; ?>" amp-lightbox-group="<?php echo $gallery_category_id; ?>" src="<?php echo $gallery_category_image['url']; ?>" width="400" height="300" layout="responsive"
+<amp-img lightbox="<?php echo $gallery_category_id; ?>" amp-lightbox-group="<?php echo $gallery_category_id; ?>" src="<?php echo $gallery_category_image['url']; ?>" width="400" height="300" layout="intrinsic"
 aria-describedby="<?php echo $gallery_category_id; ?>">
       </amp-img>
       <div hidden id="<?php echo $gallery_category_id; ?>">
@@ -54,7 +54,7 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
   src="<?php echo $gallery_image_ipad_landscape_plus['url']; ?>"
   width="640"
 			height="480"
-			layout="responsive"
+			layout="intrinsic"
             alt="<?php echo $gallery_image_ipad_landscape_plus['alt']; ?>"
             lightbox="<?php echo $gallery_category_id; ?>"
             aria-describedby="<?php echo $gallery_image_caption_id; ?>"
@@ -74,7 +74,7 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 </amp-carousel>
 <amp-carousel height="480" 
 		width="378"
-		layout="responsive"
+		layout="intrinsic"
 		type="slides"
 		autoplay
         delay="5500"
@@ -93,7 +93,9 @@ $gallery_category_content = get_sub_field('gallery_category_content');
 ?>
 
 <div id="gallery-<?php echo $gallery_category_id; ?>" class="galleryItem">
-<amp-img lightbox="<?php echo $gallery_category_id; ?>" amp-lightbox-group="<?php echo $gallery_category_id; ?>" src="<?php echo $gallery_category_image['url']; ?>" width="300" height="200" layout="responsive"
+<amp-img lightbox="<?php echo $gallery_category_id; ?>" 
+amp-lightbox-group="<?php echo $gallery_category_id; ?>" 
+src="<?php echo $gallery_category_image['url']; ?>" width="300" height="200" layout="intrinsic"
 aria-describedby="<?php echo $gallery_category_id; ?>">
       </amp-img>
       <div hidden id="<?php echo $gallery_category_id; ?>">
@@ -116,7 +118,7 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
   src="<?php echo $gallery_image_ipad_landscape_plus['url']; ?>"
   width="640"
 			height="480"
-			layout="responsive"
+			layout="intrinsic"
             alt="<?php echo $gallery_image_ipad_landscape_plus['alt']; ?>"
             lightbox="<?php echo $gallery_category_id; ?>"
             aria-describedby="<?php echo $gallery_image_caption_id; ?>"
@@ -136,7 +138,7 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 </amp-carousel>
         <amp-carousel height="600" 
 		width="1200"
-		layout="responsive"
+		layout="intrinsic"
 		type="slides"
 		autoplay
         delay="5500"
@@ -155,7 +157,7 @@ $gallery_category_content = get_sub_field('gallery_category_content');
 ?>
 
 <div id="gallery-<?php echo $gallery_category_id; ?>" class="galleryItem">
-<amp-img lightbox="<?php echo $gallery_category_id; ?>" amp-lightbox-group="<?php echo $gallery_category_id; ?>" src="<?php echo $gallery_category_image['url']; ?>" width="400" height="300" layout="responsive"
+<amp-img lightbox="<?php echo $gallery_category_id; ?>" amp-lightbox-group="<?php echo $gallery_category_id; ?>" src="<?php echo $gallery_category_image['url']; ?>" width="400" height="300" layout="intrinsic"
 aria-describedby="<?php echo $gallery_category_id; ?>">
       </amp-img>
       <div hidden id="<?php echo $gallery_category_id; ?>">
@@ -178,7 +180,7 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
   src="<?php echo $gallery_image_ipad_landscape_plus['url']; ?>"
   width="640"
 			height="480"
-			layout="responsive"
+			layout="intrinsic"
             alt="<?php echo $gallery_image_ipad_landscape_plus['alt']; ?>"
             lightbox="<?php echo $gallery_category_id; ?>"
             aria-describedby="<?php echo $gallery_image_caption_id; ?>"

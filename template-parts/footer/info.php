@@ -66,7 +66,7 @@ namespace WP_Rig\WP_Rig;
 				</li>
 				
 				<li>
-				 Closed: <?php echo $contact_us_closed; ?>
+				 <?php echo $contact_us_closed; ?> - Closed
 				</li>
 			</ul>
 			
