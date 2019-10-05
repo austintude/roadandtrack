@@ -41,7 +41,7 @@ $service_image = get_sub_field('service_image');
 
 		<amp-img 
   src="<?php echo $service_image['url']; ?>"
-  width="261"
+  width="200"
 			height="200"
 			layout="responsive"
 			alt="<?php echo $service_image['alt']; ?>">

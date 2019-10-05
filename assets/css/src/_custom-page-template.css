@@ -26,6 +26,9 @@
             font-size: 1rem;
         }
     }
+    & .wp-block-image amp-img {
+        padding: 1rem 4rem;
+    }
 
     @media (--narrow-portrait-menu-query) {
         & #carouselHero,
