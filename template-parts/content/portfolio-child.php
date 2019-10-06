@@ -142,7 +142,7 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
 </amp-carousel>
         <amp-carousel height="600" 
 		width="1200"
-		layout="intrinsic"
+		layout="responsive"
 		type="slides"
 		autoplay
         delay="5500"

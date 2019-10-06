@@ -1,7 +1,10 @@
 .page-template-portfolio-child {
-    & amp-carousel amp-img {
+    & amp-carousel {
+    min-height: 55rem;
+        & amp-img {
         cursor: pointer;
     }
+}
     & .main {
         top: 0;
         margin-top: -8rem;
@@ -52,6 +55,11 @@ margin-bottom: 10rem;
             height: 5rem;
             margin-top: -1rem;
             padding-top: 1rem;
+        }
+    }
+    @media (--large-desktop-query) {
+        & .galleryBlocks {
+            width: 100vw;
         }
     }
 }
