@@ -202,6 +202,7 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
 
 <?php endwhile; ?>
 </amp-carousel>
+</div>
 <?php if ( have_posts() ) : the_post(); ?>
 <div class="portfolioContent">
     <?php
