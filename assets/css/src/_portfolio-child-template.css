@@ -39,7 +39,8 @@ margin-bottom: 10rem;
         & amp-carousel,
         & .amp-carousel-slide,
         & #carouselHero amp-img {
-            height: 17rem;
+            min-height: 17rem;
+            max-height: 17rem;
         }
         & .galleryBlocks {
             margin: 9rem 0;
