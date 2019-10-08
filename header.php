@@ -19,6 +19,8 @@ namespace WP_Rig\WP_Rig;
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://cdn.ampproject.org">
+	<!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
 
 	<?php
 	if ( ! wp_rig()->is_amp() ) {
