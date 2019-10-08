@@ -19,6 +19,7 @@ namespace WP_Rig\WP_Rig;
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://cdn.ampproject.org">
+	<link rel="manifest" href="https://roadandtrackspecialists.com/manifest.json">
 
 	<?php
 	if ( ! wp_rig()->is_amp() ) {

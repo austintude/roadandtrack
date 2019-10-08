@@ -1,0 +1,20 @@
+{
+  "short_name": "RATS",
+  "name": "Road And Track Specialists",
+  "icons": [
+    {
+      "src": "assets/images/RATS-logo-icon.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/RATS-logo-icon.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#333",
+  "display": "standalone",
+  "theme_color": "#333"
+}
