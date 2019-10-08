@@ -19,7 +19,6 @@ namespace WP_Rig\WP_Rig;
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://cdn.ampproject.org">
-	<link rel="manifest" href="https://roadandtrackspecialists.com/manifest.json">
 
 	<?php
 	if ( ! wp_rig()->is_amp() ) {
@@ -33,6 +32,9 @@ namespace WP_Rig\WP_Rig;
 </head>
 
 <body <?php body_class(); ?>>
+<!-- Google Tag Manager -->
+<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TMC5NRG&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>

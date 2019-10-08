@@ -3,13 +3,13 @@
   "name": "Road And Track Specialists",
   "icons": [
     {
-      "src": "assets/images/RATS-logo-icon.jpg",
-      "type": "image/jpg",
+      "src": "assets/images/RATS-logo-icon.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "assets/images/RATS-logo-icon.jpg",
-      "type": "image/jpg",
+      "src": "assets/images/RATS-logo-icon-512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
