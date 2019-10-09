@@ -18,9 +18,16 @@ $gallery_category_id = get_sub_field('gallery_category_id');
 $gallery_category_title = get_sub_field('gallery_category_title');
 $gallery_category_image = get_sub_field('gallery_category_image');
 $gallery_category_image_caption = get_sub_field('gallery_category_image_caption');
+$gallery_instagram_shortcode = get_sub_field('gallery_instagram_shortcode');
 ?>
 
-<div id="gallery-<?php echo $gallery_category_id; ?>" class="galleryItem">
+
+
+<div id="gallery-<?php echo $gallery_instagram_shortcode; ?>" class="galleryItem">
+<?php if ($gallery_instagram_shortcode != null) { ?>
+  <amp-instagram data-shortcode="<?php echo $gallery_instagram_shortcode; ?>" width="1" height="1" layout="responsive">
+  </amp-instagram>
+  <?php } else { ?>
 <amp-img 
 lightbox="<?php echo $gallery_category_title; ?>" 
 amp-lightbox-group="<?php echo $gallery_category_title; ?>" 
@@ -33,6 +40,8 @@ aria-describedby="<?php echo $gallery_category_id; ?>">
       <div hidden id="<?php echo $gallery_category_id; ?>">
         <?php echo $gallery_category_image_caption; ?>
 </div>
+
+<?php } ?>
 
 
 </div> <!-- end -->

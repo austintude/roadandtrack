@@ -2,8 +2,8 @@
     & .galleryBlocks {
         margin: 8rem 5rem;
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(2, 160px);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, 460px);
   grid-gap: 1rem;
   grid-auto-flow: dense;
   
